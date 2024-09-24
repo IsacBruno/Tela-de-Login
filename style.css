@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* Remove as margens e espaçamentos padrões, define o modelo de caixa como border-box e aplica a fonte Poppins */
+}
+
+body {
+    background: url("https://picsum.photos/1600/900?random=1");
+    /* Define uma imagem de fundo aleatória de alta qualidade */
+    
+    background-size: cover;
+    /* Faz com que a imagem de fundo cubra toda a área do corpo */
+    
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    
+    min-height: 100vh;
+    /* Garante que o corpo tenha no mínimo 100% da altura da janela de visualização */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Usa Flexbox para centralizar o conteúdo no meio da tela, tanto vertical quanto horizontalmente */
+}
+
+.container{
+    width: 430px;
+    /* Define a largura fixa do container */
+    
+    background: transparent;
+    /* Deixa o fundo do container transparente */
+    
+    border: 3px solid #948989;
+    /* Adiciona uma borda sólida de 3px com uma cor cinza */
+    
+    backdrop-filter: blur(30px);
+    /* Aplica um filtro de desfoque ao fundo atrás do container */
+    
+    box-shadow: 5px 5px 5px 5px #000000;
+    /* Adiciona uma sombra em torno do container */
+    
+    border-radius: 20px;
+    /* Arredonda os cantos do container com um raio de 20px */
+    
+    padding: 30px 40px;
+    /* Adiciona preenchimento interno ao container (30px nas partes superior e inferior, 40px nas laterais) */
+}
+
+h1{
+    font-size: 30px;
+    /* Define o tamanho da fonte do título */
+    
+    text-align: center;
+    /* Centraliza o texto do título */
+    
+    color: #000000;
+    /* Define a cor do texto como preto */
+}
+
+.input-container{
+    position: relative;
+    /* Define a posição relativa para manipulação dos elementos dentro do container */
+    
+    width: 100%;
+    /* Define a largura total do container de entrada */
+    
+    height: 50px;
+    /* Define a altura fixa de 50px */
+    
+    margin: 30px 0;
+    /* Adiciona uma margem de 30px no topo e na parte inferior */
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    /* Faz com que o campo de entrada ocupe toda a largura e altura do container */
+    
+    background: transparent;
+    /* Deixa o fundo do campo de entrada transparente */
+    
+    border: none;
+    /* Remove a borda padrão do campo de entrada */
+    
+    outline: none;
+    /* Remove a borda ao focar o campo */
+    
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* Adiciona uma borda semitransparente ao redor do campo de entrada */
+    
+    border-radius: 12px;
+    /* Arredonda os cantos do campo de entrada com um raio de 12px */
+    
+    font-size: 16px;
+    /* Define o tamanho da fonte dentro do campo de entrada */
+    
+    color: #fff;
+    /* Define a cor do texto dentro do campo de entrada como branca */
+    
+    padding: 20px 45px 20px 20px;
+    /* Define o preenchimento interno do campo de entrada: 20px nas partes superior, inferior e esquerda, 45px à direita */
+}
+
+.input-container input::placeholder{
+    color: rgb(84, 110, 110);
+    /* Define a cor do texto do placeholder */
+}
+
+.input-container img{
+    position: absolute;
+    /* Posiciona o ícone de forma absoluta em relação ao container de entrada */
+    
+    right: 22px;
+    /* Define a posição do ícone a 22px da direita */
+    
+    top: 12%;
+    /* Posiciona o ícone 12% a partir do topo do container */
+    
+    margin-top: 5px;
+    /* Adiciona uma margem superior de 5px ao ícone */
+}
+
+.input-container a {
+    font-size: 16px;
+    /* Define o tamanho da fonte do link "Esqueci minha senha" */
+    
+    margin-top: 4px;
+    /* Adiciona uma pequena margem superior ao link */
+    
+    color: rgb(84, 110, 110);
+    /* Define a cor do link */
+    
+    text-decoration: none;
+    /* Remove a sublinhado padrão do link */
+}
+
+.input-container a:hover{
+    text-decoration: underline;
+    /* Adiciona o sublinhado ao link quando o usuário passa o mouse por cima */
+}
+
+.submit-button{
+    width: 100%;
+    height: 50px;
+    /* Define a largura e altura do botão de envio */
+    
+    background-color: rgb(37, 5, 80);
+    /* Define a cor de fundo do botão */
+    
+    border: none;
+    /* Remove qualquer borda padrão do botão */
+    
+    border-radius: 10px;
+    /* Arredonda os cantos do botão com um raio de 10px */
+    
+    color: #fff;
+    /* Define a cor do texto dentro do botão como branca */
+    
+    font-weight: 500;
+    /* Define uma espessura média para o texto do botão */
+    
+    margin-top: 24px;
+    /* Adiciona uma margem superior de 24px ao botão */
+    
+    cursor: pointer;
+    /* Muda o cursor para uma mãozinha ao passar o mouse por cima do botão */
+    
+    outline: none;
+    /* Remove qualquer contorno ao focar o botão */
+    
+    font-size: 16px;
+    /* Define o tamanho da fonte do botão */
+}
+
+.submit-button:hover{
+    background-color: rgb(106, 63, 163);
+    /* Altera a cor de fundo do botão quando o usuário passa o mouse por cima */
+}
+
+.register-link{
+    text-align: center;
+    /* Centraliza o texto de registro */
+    
+    margin: 20px 0;
+    /* Adiciona margens de 20px acima e abaixo do texto de registro */
+}
+
+.register-link p  {
+    font-size: 16px;
+    /* Define o tamanho da fonte do parágrafo dentro do link de registro */
+    
+    color: #fff;
+    /* Define a cor do texto como branca */
+    
+    font-weight: 300;
+    /* Define uma espessura leve para o texto */
+}
+
+.register-link p a {
+    font-size: 16px;
+    /* Define o tamanho da fonte do link de cadastro */
+    
+    color: #fff;
+    /* Define a cor do link como branco */
+    
+    font-weight: 500;
+    /* Define uma espessura média para o texto do link */
+    
+    text-decoration: none;
+    /* Remove o sublinhado padrão do link */
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    /* Adiciona o sublinhado ao link de cadastro quando o usuário passa o mouse por cima */
+}
